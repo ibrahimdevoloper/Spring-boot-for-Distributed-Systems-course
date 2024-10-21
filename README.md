@@ -1,9 +1,9 @@
 ## Distributed Systems Project
 ### University of Miskolc - MSc in Computer Science Engineering
 
-Course: Distributed Systems
-Student: Ibrahim Sh.
-Neptune: X2MFJ*
+    Course: Distributed Systems
+    Student: Ibrahim Sh.
+    Neptune: X2MFJ*
 
 ### Project Overview
 This project is a Java Spring Boot application developed for the Distributed Systems course. It demonstrates key concepts such as microservices, RESTful APIs, and distributed architectures.
