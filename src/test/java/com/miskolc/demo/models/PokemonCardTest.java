@@ -22,7 +22,7 @@ public class PokemonCardTest {
     private JacksonTester<PokemonCard> json;
     @Test
     void cashCardSerializationTest() throws IOException {
-        PokemonCard pokemonCard = new PokemonCard("Kyurem", 123,"Holo");
+        PokemonCard pokemonCard = new PokemonCard(1,"Kyurem", 123,"Holo");
         assertThat(json.write(pokemonCard)).isStrictlyEqualToJson("expected.json");
         assertThat(json.write(pokemonCard)).hasJsonPathNumberValue("@.price");
         assertThat(json.write(pokemonCard)).extractingJsonPathNumberValue("@.price")
