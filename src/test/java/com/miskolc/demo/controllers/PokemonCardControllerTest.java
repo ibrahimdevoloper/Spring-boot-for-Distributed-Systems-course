@@ -41,7 +41,7 @@ public class PokemonCardControllerTest {
 
     @Test
     void addPokemon() {
-        ResponseEntity<String> response = restTemplate.postForEntity("/cards", new PokemonCard(10,"Rattata", 1, "Normal"), String.class);
+        ResponseEntity<String> response = restTemplate.postForEntity("/cards", new PokemonCard("Rattata", 1, "Normal"), String.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
     }
 

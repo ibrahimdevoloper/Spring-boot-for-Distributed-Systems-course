@@ -15,9 +15,9 @@ public class PokemonCardController {
     List<PokemonCard> cards;
     public PokemonCardController(){
         cards = new LinkedList<>();
-        cards.add(new PokemonCard(1,"Kyurem",100,"Holo"));
-        cards.add(new PokemonCard(2,"Charmender",10,"Normal"));
-        cards.add(new PokemonCard(3,"Pickachu",50,"Ghost"));
+        cards.add(new PokemonCard("Kyurem",100,"Holo"));
+        cards.add(new PokemonCard("Charmender",10,"Normal"));
+        cards.add(new PokemonCard("Pickachu",50,"Ghost"));
     }
     @GetMapping("/{id}")
     private ResponseEntity<PokemonCard> findById(@PathVariable int id) {
