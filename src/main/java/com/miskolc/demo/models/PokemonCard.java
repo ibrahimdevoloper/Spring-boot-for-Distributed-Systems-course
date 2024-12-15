@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Primary;
 
 @Data
 public class PokemonCard {
-    static private int mainId=1;
+    static private int mainId=0;
     private int id;
     private String name;
     private int price;
