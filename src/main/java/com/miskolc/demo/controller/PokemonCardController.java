@@ -58,18 +58,7 @@ public class PokemonCardController {
 
     @PutMapping(path = "")
     private ResponseEntity<PokemonCard> editPokemon(@RequestBody PokemonCard card) {
-//        for (int j = 0; j < cards.size(); j++) {
-//            PokemonCard temp = cards.get(j);
-//            if (temp.getId() == card.getId()) {
-//                cards.get(j).setName(card.getName());
-//                cards.get(j).setPrice(card.getPrice());
-//                cards.get(j).setType(card.getType());
-//                break;
-//            }
-//        }
         pokemonCardService.updatePokemonCard(card);
-//        if (card == null)
-//            return (ResponseEntity<PokemonCard>) notFound();
         return ResponseEntity.ok(card);
     }
 

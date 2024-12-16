@@ -27,8 +27,8 @@ public class PokemonCardService {
     }
 
     //get a pokemon card by id
-    public PokemonCard getPokemonCard(long id){
-        return pokemonCardRepository.findById(id).orElse(null);
+    public PokemonCard getPokemonCard(int id){
+        return pokemonCardRepository.findById( id).orElse(null);
     }
 
     //update a pokemon card
@@ -37,7 +37,7 @@ public class PokemonCardService {
     }
 
     //delete a pokemon card
-    public void deletePokemonCard(long id){
+    public void deletePokemonCard(int id){
         pokemonCardRepository.deleteById(id);
     }
 
